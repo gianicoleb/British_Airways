@@ -1,100 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>British Airways Customer Review Analysis</title>
-    <style>
-        /* You can add CSS styles here if needed */
-    </style>
-</head>
-<body>
+# British Airways Customer Review Analysis
 
-<h1>British Airways Customer Review Analysis</h1>
+This project analyzes customer reviews for British Airways using data from www.airlinequality.com. By inspecting different aspects of these reviews, the aim is to unearth patterns and trends that affect customer satisfaction. These patterns can guide British Airways in formulating strategies to enhance customer experience.
 
-<p>This project analyzes customer reviews for British Airways using data from <a href="https://www.airlinequality.com">www.airlinequality.com</a>. By inspecting different aspects of these reviews, the aim is to unearth patterns and trends that affect customer satisfaction. These patterns can guide British Airways in formulating strategies to enhance customer experience.</p>
+## Table of Contents:
+- [Introduction](#introduction)
+- [Data Collection](#data-collection)
+- [Data Analysis](#data-analysis)
+  - [Sentiment Analysis](#sentiment-analysis)
+  - [Bayesian Weighted Average](#bayesian-weighted-average)
+  - [Review Categories Analysis](#review-categories-analysis)
+  - [Key Complaint Areas](#key-complaint-areas)
+- [Visualization](#visualization)
+- [Conclusion](#conclusion)
 
-<h2>Table of Contents:</h2>
-<ol>
-    <li>Introduction</li>
-    <li>Data Collection</li>
-    <li>Data Analysis
-        <ul>
-            <li>Sentiment Analysis</li>
-            <li>Bayesian Weighted Average</li>
-            <li>Review Categories Analysis</li>
-            <li>Key Complaint Areas</li>
-        </ul>
-    </li>
-    <li>Visualization</li>
-    <li>Conclusion</li>
-</ol>
+## Introduction
 
-<hr>
+Air travel reviews are invaluable for airlines. They provide insights into passengers' experiences, from booking a ticket to disembarking at their destination. This project seeks to quantify these experiences by focusing on several aspects:
+- Overall sentiment
+- Routes with the highest and lowest scores
+- Rating across various service categories
+- Key complaints from negative reviews
 
-<h2>1. Introduction</h2>
+## Data Collection
 
-<p>Air travel reviews are invaluable for airlines. They provide insights into passengers' experiences, from booking a ticket to disembarking at their destination. This project seeks to quantify these experiences by focusing on several aspects:</p>
-<ul>
-    <li>Overall sentiment</li>
-    <li>Routes with the highest and lowest scores</li>
-    <li>Rating across various service categories</li>
-    <li>Key complaints from negative reviews</li>
-</ul>
+Using web scraping techniques, we collect reviews from www.airlinequality.com. Each review provides:
+- Reviewer name
+- Review date
+- Overall score
+- Review content
+- Type of traveller
+- Seat type
+- Route
+- Date flown
+- Ratings in categories such as:
+  - Seat Comfort
+  - Cabin Staff Service
+  - Food & Beverages
+  - Inflight Entertainment
+  - Ground Service
+  - Value For Money
 
-<hr>
+## Data Analysis
 
-<h2>2. Data Collection</h2>
+### Sentiment Analysis
+![Sentiment Distribution Pie Chart](path_to_image)
 
-<p>Using web scraping techniques, we collect reviews from <a href="https://www.airlinequality.com">www.airlinequality.com</a>. Each review provides:</p>
+Using the TextBlob library, each review's sentiment is gauged. This categorizes reviews as:
+- Positive
+- Neutral
+- Negative
 
-<ul>
-    <li>Reviewer name</li>
-    <li>Review date</li>
-    <li>Overall score</li>
-    <!-- ... add other review aspects similarly ... -->
-    <li>Ratings in categories such as:
-        <ul>
-            <li>Seat Comfort</li>
-            <!-- ... add other rating categories similarly ... -->
-            <li>Value For Money</li>
-        </ul>
-    </li>
-</ul>
+This pie chart showcases the distribution of these sentiments.
 
-<hr>
+### Bayesian Weighted Average
+![Routes with Best and Worst Reviews Bar Chart](path_to_image)
 
-<h2>3. Data Analysis</h2>
+Routes are rated based on a Bayesian weighted average to provide a more balanced view. The idea is to consider both the average score of a route and the number of reviews it has.
 
-<h3>3.1 Sentiment Analysis</h3>
-<p><em>*Insert the sentiment distribution pie chart here.*</em></p>
-<p>Using the TextBlob library, each review's sentiment is gauged. This categorizes reviews as:</p>
-<ul>
-    <li>Positive</li>
-    <li>Neutral</li>
-    <li>Negative</li>
-</ul>
-<p>This pie chart showcases the distribution of these sentiments.</p>
+### Review Categories Analysis
+![Average Ratings for Review Categories Bar Chart](path_to_image)
 
-<!-- ... Add other sections similarly ... -->
+Each review contains ratings for different service categories. This bar chart illustrates the average ratings for each category, offering a broad overview of British Airways' performance in specific areas.
 
-<hr>
+### Key Complaint Areas
+![Most Common Complaints Bar Chart](path_to_image)
 
-<h2>4. Visualization</h2>
-<!-- Visualization content here ... -->
+By analyzing words in negative reviews, we identify recurring themes. These themes highlight areas where British Airways might need to focus its efforts.
 
-<hr>
+## Visualization
 
-<h2>5. Conclusion</h2>
-<p>Through this project, British Airways can acquire a comprehensive understanding of its customer reviews. The insights obtained can be foundational for enhancing customer satisfaction and service quality.</p>
+This project extensively uses `matplotlib` and `seaborn` libraries for visualization. These graphs help:
+- Quickly grasp the overall sentiment of reviews.
+- Recognize areas of excellence and potential improvement.
+- Understand trends in customer satisfaction based on routes and service categories.
 
-<p><strong>Note:</strong> For reproducing the results, make sure you have all the necessary libraries installed and access to the data source.</p>
+## Conclusion
 
-<p><strong>Dependencies:</strong> requests, BeautifulSoup, csv, TextBlob, pandas, matplotlib, seaborn, nltk</p>
+Through this project, British Airways can acquire a comprehensive understanding of its customer reviews. The insights obtained can be foundational for enhancing customer satisfaction and service quality.
 
-<hr>
+**Note:** For reproducing the results, make sure you have all the necessary libraries installed and access to the data source.
 
-<p><strong>Acknowledgment:</strong> This project sources its data from <a href="https://www.airlinequality.com">www.airlinequality.com</a>, and the analysis is intended for educational purposes.</p>
+**Dependencies:** `requests`, `BeautifulSoup`, `csv`, `TextBlob`, `pandas`, `matplotlib`, `seaborn`, `nltk`
 
-</body>
-</html>
+**Acknowledgment:** This project sources its data from www.airlinequality.com, and the analysis is intended for educational purposes.
