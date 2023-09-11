@@ -53,12 +53,12 @@ Using the TextBlob library, each review's sentiment is gauged. This categorizes 
 This pie chart showcases the distribution of these sentiments.
 
 ### Bayesian Weighted Average
-![Routes with Best and Worst Reviews Bar Chart](ba2.png)
+![Routes with Best and Worst Reviews Bar Chart](British_Airways/ba2.png)
 
 Routes are rated based on a Bayesian weighted average to provide a more balanced view. The idea is to consider both the average score of a route and the number of reviews it has.
 
 ### Review Categories Analysis
-![Average Ratings for Review Categories Bar Chart](path_to_image)
+![Average Ratings for Review Categories Bar Chart]("British_Airways/ba2.png")
 
 Each review contains ratings for different service categories. This bar chart illustrates the average ratings for each category, offering a broad overview of British Airways' performance in specific areas.
 
