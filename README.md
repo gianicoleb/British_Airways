@@ -63,7 +63,7 @@ Routes are rated based on a Bayesian weighted average to provide a more balanced
 Each review contains ratings for different service categories. This bar chart illustrates the average ratings for each category, offering a broad overview of British Airways' performance in specific areas.
 
 ### Key Complaint Areas
-![Most Common Complaints Bar Chart](path_to_image)
+![Most Common Complaints Bar Chart]("https://github.com/gianicoleb/British_Airways/blob/main/ba2.png")
 
 By analyzing words in negative reviews, we identify recurring themes. These themes highlight areas where British Airways might need to focus its efforts.
 
