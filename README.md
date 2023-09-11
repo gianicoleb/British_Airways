@@ -43,7 +43,7 @@ Using web scraping techniques, we collect reviews from www.airlinequality.com. E
 ## Data Analysis
 
 ### Sentiment Analysis
-![Sentiment Distribution Pie Chart](path_to_image)
+![Sentiment Distribution Pie Chart]("pichart.png")
 
 Using the TextBlob library, each review's sentiment is gauged. This categorizes reviews as:
 - Positive
