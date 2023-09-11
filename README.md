@@ -43,7 +43,7 @@ Using web scraping techniques, we collect reviews from www.airlinequality.com. E
 ## Data Analysis
 
 ### Sentiment Analysis
-![Sentiment Distribution Pie Chart]("pichart.png")
+![Sentiment Distribution Pie Chart](pichart.png)
 
 Using the TextBlob library, each review's sentiment is gauged. This categorizes reviews as:
 - Positive
@@ -53,18 +53,18 @@ Using the TextBlob library, each review's sentiment is gauged. This categorizes 
 This pie chart showcases the distribution of these sentiments.
 
 ### Bayesian Weighted Average
-![Routes with Best and Worst Reviews Bar Chart](British_Airways/ba2.png)
+![Routes with Best and Worst Reviews Bar Chart](ba2.png)
 
 Routes are rated based on a Bayesian weighted average to provide a more balanced view. The idea is to consider both the average score of a route and the number of reviews it has.
 
 ### Review Categories Analysis
-![Average Ratings for Review Categories Bar Chart](ba2.png)
+![Average Ratings for Review Categories Bar Chart](ba3.png)
 
 Each review contains ratings for different service categories. This bar chart illustrates the average ratings for each category, offering a broad overview of British Airways' performance in specific areas.
 
 ### Key Complaint Areas
 href="ba2.png"><img src="ba2.png"
-![Most Common Complaints Bar Chart]("https://github.com/gianicoleb/British_Airways/blob/main/ba2.png")
+![Most Common Complaints Bar Chart](ba4.png)
 
 By analyzing words in negative reviews, we identify recurring themes. These themes highlight areas where British Airways might need to focus its efforts.
 
