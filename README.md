@@ -53,7 +53,7 @@ Using the TextBlob library, each review's sentiment is gauged. This categorizes 
 This pie chart showcases the distribution of these sentiments.
 
 ### Bayesian Weighted Average
-![Routes with Best and Worst Reviews Bar Chart]("ba2.png")
+![Routes with Best and Worst Reviews Bar Chart](ba2.png)
 
 Routes are rated based on a Bayesian weighted average to provide a more balanced view. The idea is to consider both the average score of a route and the number of reviews it has.
 
